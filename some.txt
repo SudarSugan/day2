@@ -1,0 +1,64 @@
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ touch w_1_.1
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ touch some.txt
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git init
+Initialized empty Git repository in /home/twilightuser/Desktop/G_W_!/.git/
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add w1.1.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   w1.1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	some.txt
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git rm --cached w1.1.html
+rm 'w1.1.html'
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	some.txt
+	w1.1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add *.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   w1.1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	some.txt
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ 
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add .
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   some.txt
+	new file:   w1.1.html
+
