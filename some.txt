@@ -313,3 +313,135 @@ Untracked files:
 	s.txt
 
 
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit -m 'add some working commands-2'
+[master 765a7fd] add some working commands-2
+ 1 file changed, 129 insertions(+)
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ toch gitignore
+
+Command 'toch' not found, did you mean:
+
+  command 'loch' from deb therion-viewer
+  command 'touch' from deb coreutils
+
+Try: sudo apt install <deb name>
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+nothing to commit, working tree clean
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ touch gitignore
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ ls
+gitignore  some.txt  w1.1.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ touch image.jpg
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add .
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   gitignore
+	new file:   image.jpg
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   gitignore
+	new file:   image.jpg
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gitignore
+	deleted:    image.jpg
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	s.txt
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ clear
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add .
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   dir1/java.js
+	new file:   dir2/java1.js
+	new file:   gitignore
+	new file:   s.txt
+	modified:   some.txt
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git branch branch1
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git checkout branch1
+A	dir1/java.js
+A	dir2/java1.js
+A	gitignore
+A	s.txt
+M	some.txt
+Switched to branch 'branch1'
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ touch login.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git checkout master
+A	dir1/java.js
+A	dir2/java1.js
+A	gitignore
+A	s.txt
+M	some.txt
+Switched to branch 'master'
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit "before adding branch"
+error: pathspec 'before adding branch' did not match any file(s) known to git.
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit -m "before adding branch"
+[master 50beecf] before adding branch
+ 5 files changed, 128 insertions(+), 1 deletion(-)
+ create mode 100644 dir1/java.js
+ create mode 100644 dir2/java1.js
+ create mode 100644 gitignore
+ create mode 100644 s.txt
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	login.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git checkout branch1
+Switched to branch 'branch1'
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	login.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add login.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch branch1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   login.html
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit -m "add new file in branch1"
+[branch1 fe16a90] add new file in branch1
+ 1 file changed, 16 insertions(+)
+ create mode 100644 login.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git checkout master
+Switched to branch 'master'
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ 
+
+
