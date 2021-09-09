@@ -62,3 +62,132 @@ Changes to be committed:
 	new file:   some.txt
 	new file:   w1.1.html
 
+
+
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   w1.1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	some.txt
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git rm --cached w1.1.html
+rm 'w1.1.html'
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	some.txt
+	w1.1.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add *.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   w1.1.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	some.txt
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add .
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   some.txt
+	new file:   w1.1.html
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ clear
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   some.txt
+	new file:   w1.1.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   some.txt
+	modified:   w1.1.html
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit - m"Just checking the file"
+error: pathspec '-' did not match any file(s) known to git.
+error: pathspec 'mJust checking the file' did not match any file(s) known to git.
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git add .
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   some.txt
+	new file:   w1.1.html
+
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit
+Use "fg" to return to nano.or to close the file... 
+
+[1]+  Stopped                 git commit
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit
+Use "fg" to return to nano.or to close the file... 
+
+[2]+  Stopped                 git commit
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git commit
+Use "fg" to return to nano.or to close the file... 
+
+[3]+  Stopped                 git commit
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ git fg
+git: 'fg' is not a git command. See 'git --help'.
+
+The most similar commands are
+	log
+	tag
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ fg
+git commit
+Use "fg" to return to nano.
+
+[3]+  Stopped                 git commit
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ gf
+gf: command not found
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ fg
+git commit
+Use "fg" to return to nano.
+
+[3]+  Stopped                 git commit
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ fg
+git commit
+[master (root-commit) 9f8787c] Initial commit
+ 2 files changed, 76 insertions(+)
+ create mode 100644 some.txt
+ create mode 100644 w1.1.html
+twilightuser@TLSPC-001:~/Desktop/G_W_!$ ^C
+twilightuser@TLSPC-001:~/Desktop/G_W_!$
+
